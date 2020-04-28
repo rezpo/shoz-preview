@@ -1,0 +1,32 @@
+@import '../../Styles/Global.scss';
+
+.Container {
+  &__menu {
+    &-wrapper {
+      width: 80%;
+    }
+
+    &-categories {
+      @include flex-center;
+      padding: 0;
+      margin: 0;
+
+      .category {
+        margin: 0 2rem;
+        list-style: none;
+        font-family: $roboto;
+        font-weight: 800;
+
+        .anchor {
+          color: $black;
+          text-decoration: none;
+
+          &:hover {
+            color: $blue;
+          }
+        }
+
+      }
+    }
+  }
+}

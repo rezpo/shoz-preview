@@ -1,0 +1,61 @@
+@import '../../Styles/Global.scss';
+
+.Container {
+  &__button {
+    &-primary {
+      @include button-style;
+      background: $pink;
+      margin: .5rem 0;
+      color: $white;
+
+      svg {
+        margin: 0 .5rem;
+      }
+
+      &:hover {
+        background: $black;
+        transition: all .2s ease-out;
+      }
+    }
+
+    &-secondary {
+      @include button-style;
+      background: $blue;
+      margin: .5rem 0;
+      color: $white;
+
+      svg {
+        margin: 0 .5rem;
+      }
+
+      &:hover {
+        background: $black;
+        transition: all .2s ease-out;
+      }
+    }
+
+    &-tertiary {
+      @include button-style;
+      background: $black;
+      margin: .5rem 0;
+      color: $white;
+
+      svg {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 .5rem;
+
+        path {
+          fill: $white;
+        }
+      }
+
+      &:hover {
+        background: $pink;
+        transition: all .2s ease-out;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../Styles/Global.scss';
+
+.Container {
+  &__break {
+    &-wrapper {
+      @include flex-start;
+      margin: 4rem auto;
+      width: 90%;
+
+      .title {
+        font-family: $roboto;
+        font-size: $size-L;
+        font-weight: 800;
+        margin-right: 1rem;
+      }
+      .linebreak {
+        width: 80%;
+        border-bottom: 1px solid $dark-white;
+        height: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import '../../Styles/Global.scss';
+
+.Container {
+  &__collection {
+    &-wrapper {
+      width: 100%;
+      padding: 5rem 0;
+    }
+
+    &-window {
+      @include flex-evenly;
+      width: 100%;
+    }
+    &-inspiration {
+      background: $blue;
+      width: 30rem;
+      height: 49rem;
+      position: relative;
+
+      .cover {
+        position: absolute;
+        width: 82%;
+        left: -5rem;
+        top: 50%;
+        transform: translate(0, -61%);
+      }
+
+      .set {
+        @include flex-between;
+        position: absolute;
+        bottom: 1rem;
+        width: 100%;
+        left: -5rem;
+
+        .product {
+          width: 25%;
+          background: $white;
+          cursor: pointer;
+          position: relative;
+          border-radius: .5rem;
+
+          .picture {
+            width: 100%;
+            opacity: .8;
+            transition: .2s ease-in-out;
+            display: block;
+            margin: auto 0;
+            border-radius: .5rem;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+
+          .price {
+            position: absolute;
+            bottom: 1rem;
+            left: -.5rem;
+            background: $black;
+            padding: .2rem .4rem;
+            color: $white;
+            font-size: $size-S;
+            border-radius: .3rem;
+          }
+        }
+      }
+    }
+    &-features {
+      width: 27%;
+
+      .title {
+        font-size: $size-L;
+      }
+
+      .note {
+        width: 100%;
+      }
+    }
+  }
+}

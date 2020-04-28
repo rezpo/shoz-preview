@@ -1,0 +1,43 @@
+@import '../../Styles/Global.scss';
+
+.Container {
+  &__quickreview {
+    &-wrapper {
+      width: 100%;
+      margin: 4rem 0 8rem 0;
+    }
+
+    &-window {
+      @include flex-between;
+      position: relative;
+      width: 100%;
+      left: 0;
+      background-image: url('https://www.dropbox.com/s/m4lkbi7nepcdce7/bg-pattern.png?raw=1');
+      background-repeat: repeat;
+    }
+
+    &-counter {
+      background: $yellow;
+      width: 45%;
+      height: 30rem;
+
+      .product {
+        width: 28%;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(0, -50%);
+      }
+    }
+
+    &-review {
+      width: 55%;
+      padding: 1rem 2rem;
+
+      .note {
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
