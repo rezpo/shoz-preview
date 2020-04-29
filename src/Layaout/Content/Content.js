@@ -34,12 +34,14 @@ export default class Content extends Component {
       <div className='Container__content-wrapper'>
         <Promo />
         {isActiveComponent.map(item => {
-
+          
           let items = item.fields
           let isActive = items.activeComponent
 
           if (isActive === 'Active') {
             return <Catalog />
+          } else {
+            return null
           }
 
         })}
